@@ -12,4 +12,9 @@ public class MainMenu : MonoBehaviour {
         Debug.Log("Quit!");
         Application.Quit();
     }
+
+    public void ShowCredits() {
+        Debug.Log("Credits!");
+        SceneManager.LoadScene(SceneManager.sceneCount - 1);
+    }
 }
